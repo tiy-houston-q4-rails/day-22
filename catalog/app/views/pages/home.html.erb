@@ -1,0 +1,15 @@
+<h1>Categories</h1>
+
+<div class="links">
+  <%= link_to "New Product", new_product_path %>
+</div>
+
+
+<% @categories.all.each do |category| %>
+  <h2><%= category.name %></h2>
+  <ul>
+    <% category.products.each do |product| %>
+      <li><%= link_to product.name, edit_product_path(product) %></li>
+    <% end %>
+  </ul>
+<% end %>

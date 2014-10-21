@@ -1,0 +1,22 @@
+<%= form_for @product do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+
+  <%= f.label :category %>
+  <%= f.collection_select :category_id, Category.all, :id, :name, prompt: true %>
+
+  <%= f.submit %>
+<% end %>
+
+
+<hr />
+
+<%= simple_form_for @product do |f| %>
+  <%= f.input :name %>
+  <%= f.input :price %>
+  <%= f.input :category_id, as: :select, collection: Category.all %>
+  <%= f.submit %>
+<% end %>
