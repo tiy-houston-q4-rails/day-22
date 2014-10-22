@@ -1,7 +1,7 @@
+<h3><%= parent.name %></h3>
 <ul>
   <% parent.sub_directories.each do |sub_dir| %>
     <li>
-        <%= sub_dir.name %>
         <%= render partial: "children", locals: {parent: sub_dir} %>
     </li>
   <% end %>
