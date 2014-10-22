@@ -8,7 +8,8 @@ Your tasks:
 1. Tack history of checking out of books
 2. Able to tell if a book is currently available
 
-(image of board here)
+![img_2632](https://cloud.githubusercontent.com/assets/123075/4723531/7c02b2f6-5948-11e4-9d3d-285d16e9dec3.JPG)
+
 
 Pages to create:
 
